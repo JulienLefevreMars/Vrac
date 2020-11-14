@@ -3,8 +3,7 @@ import sys
 
 def successor(list):
 	# Find the successor of a sequence of integer by counting each occurence, taking into account ordering
-	# Example: sucessor(1121)=211211
-	
+	# Example: sucessor(1121)=211211	
 	new_list = []
 	n = len(list)
 	i = 0
@@ -39,6 +38,7 @@ def print_all_terms(all_terms):
 	for i in range(N):
 		#print(all_terms[i])
 		print_one_term(all_terms[i])
+
 
 if __name__ == "__main__":
 	N = int(sys.argv[1])
