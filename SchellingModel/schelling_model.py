@@ -63,15 +63,17 @@ def one_move(I,T):
 if __name__ == "__main__":
 	I = initial_config(size = 50)
 	if len(sys.argv)==1:
-		N=100
+		N=10000
 	if len(sys.argv)==2:
 		N = int(sys.argv[1])
 	plt.figure()
 	plt.subplot(1,2,1)
+	plt.title("Initial condition")
 	plt.imshow(I)
 	for iter in range(N):
 		one_move(I,8)
 	plt.subplot(1,2,2)
+	plt.title("Iteration" + str(N))
 	plt.imshow(I)
 	plt.show()
 	
